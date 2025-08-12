@@ -1,0 +1,13 @@
+name: new_workflow
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps: 
+        - name: Checkout
+          uses: actions/checkout@v4
+
+        - name: Read file
+          run: cat README.md
